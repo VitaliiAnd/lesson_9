@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        <a href="../index.html"> Назад</a>
+    </h3>
+    <h3>
+        Дано масив елементів. Знайти добуток додатних елементів
+    </h3>
+    <script>
+        const arrayNum = [23, -213, -341, 123, -1231, 432, 2141, 986, 3, -555]
+        function getCurentArray(arrayNum) {
+            let productElements = 1
+            for (let element of arrayNum){
+                if (element > 0) productElements = productElements * element
+            }
+            return productElements
+        }
+        let currentArr = document.write(`Масив елементів ${arrayNum}<br> Добуток додатніх ${getCurentArray(arrayNum)}`)
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        <a href="../index.html"> Назад</a>
+    </h3>
+    <h3>
+        Дано масив номерів авто. Сформувати новий масив тих, які починаються на «А»
+    </h3>
+    <script>
+        const licensePlateArray = ['CD1234VC', 'WE1234rE', 'AA1234QW', 'AS1234ED', 'SA1234SD', 'AE1234QW', 'AA1234DS']
+        const conditionPlate = 'A'
+
+        function arrayPlate(licensePlateArray) {
+            const newArr = licensePlateArray.filter(element => element[0] === conditionPlate)
+            return newArr
+        }
+        let currentArr = document.write(`масив номерів: ${licensePlateArray} <br>масив номерів які починаються на А: ${arrayPlate(licensePlateArray)} `)
+    </script>
+</body>
+</html>
